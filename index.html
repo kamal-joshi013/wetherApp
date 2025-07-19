@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <script
+      src="https://kit.fontawesome.com/70e40d5c7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <nav id="navbar">
+        <div id="home">
+          <a href="index.html"
+            ><img src="./ImagesForApp/home.jpg" alt="Weather"
+          /></a>
+        </div>
+        <div id="searchbar">
+          <input type="text" placeholder="enter city name" id="inputSearch" />
+          <div id="searchicon">
+            <a href="index.html"><i class="fa-solid fa-magnifying-glass" id="searchButton"></i></a>
+          </div>
+        </div>
+        <div id="location">
+          <a href="#"
+            ><i class="fa-solid fa-location-crosshairs"></i>my location</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+        <div id="loadingSpinner">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+          </div>
+      <section id="hero">
+        <div class="weather"><p id="cityName">Delhi</p></div>
+        <div class="weather"><p id="tempDegree">7&#8451;</p></div>
+        <div class="weather"><p id="dec">clear sky</p></div>
+        <div id="weather-icon" >
+          <img id="weatherImg" src="./ImagesForApp/clear.png" alt="Weather Icon" />
+        </div>
+      </section>
+      <section id="about-weather">
+        <div id="humidity">
+          <img src="./ImagesForApp/humidity.png" alt="humidity">
+          <div class="details">
+          <p id="humidityp">48&#37;</p>
+          <p>humidity</p>
+        </div>
+
+        </div>
+        <div id="wind-Speed">
+            <div id ="wind-icon">
+                <i class="fa-solid fa-wind"></i>
+            </div>
+            <div class="details">
+                <p id="wind">10.29km/h</p>
+                <p id="speed">wind speed</p>
+            </div>
+           
+        </div>
+      </section>
+    </main>
+    <footer>
+       <div id="footer">
+        <p>Copyright &copy;2025 by weatheApp. All Rights Reserved.</p>
+       </div>
+    </footer>
+
+
+    <script src="weather.js"></script>
+  </body>
+</html>
