@@ -86,7 +86,7 @@ inputSearch.addEventListener("keypress", function (event) {
 // Event listener for search button click
 searchButton.addEventListener("click", searchCity);
 
-document.getElementById("location").addEventListener("click", getLocation);
+document.getElementById("location").addEventListener("click", getUserLocation);
 
 function handleWeatherMain(main) {
   switch (main) {
